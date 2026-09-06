@@ -1,0 +1,5 @@
+-- Site backup, taken 2024-11-02 --
+admin_email=root@lab.local
+db_dump_pending=true
+FLAG=LAB{a05_medium_exposed_backup_file}
+-- end of backup --

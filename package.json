@@ -1,0 +1,16 @@
+{
+  "name": "owasp-top10-ctf-lab",
+  "version": "1.0.0",
+  "description": "Local OWASP Top 10 vulnerability lab with capture-the-flag challenges across Easy/Medium/Hard difficulty",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "sql.js": "^1.10.3",
+    "uuid": "^9.0.1"
+  }
+}

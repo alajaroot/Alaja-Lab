@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OWASP Top 10 :: CTF Lab</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-top">
+    <div>
+      <h1 class="hero-title"><span class="bracket">[</span>OWASP Top 10<span class="bracket">]</span> CTF Lab</h1>
+      <div class="hero-sub">30 objectives — the 2021 OWASP Top 10, each rated Easy / Medium / Hard — hidden inside a real target application you have to explore. This page tracks what you've found; it doesn't tell you where to look.</div>
+      <a href="/target.html" target="_blank" class="dashboard-launch">🎯 Open Target Application (new tab) →</a>
+    </div>
+    <div class="scan-meter">
+      <span id="rankLabel">Rank: Script Kiddie</span>
+      <div class="bar"><span id="progressBar" style="width:0%"></span></div>
+      <span class="count"><span id="scoreLabel">0</span>/1000 pts · <span id="solvedCount">0</span>/30</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="filter-row" id="filterRow">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="easy">Easy</button>
+    <button data-filter="medium">Medium</button>
+    <button data-filter="hard">Hard</button>
+    <button data-filter="unsolved">Unsolved only</button>
+  </div>
+
+  <div id="categories"></div>
+
+  <div class="footer-note">
+    Register or log in from within the target application itself (top-right, or via the Login/Register
+    pages) — that's part of the exercise. Each objective card below is deliberately light on specifics;
+    click one to see the full description, progressive hints, and a place to submit its flag once you've
+    found and exploited it in the target app. See README.md for setup notes.
+  </div>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

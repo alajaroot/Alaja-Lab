@@ -1,0 +1,1 @@
+LAB{a06_medium_insecure_deserialization}

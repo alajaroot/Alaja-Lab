@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Objective :: OWASP Top 10 CTF Lab</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header class="hero lab-hero">
+  <a href="/" class="back-link">&larr; All objectives</a>
+  <div id="labHeader"></div>
+  <p id="labDesc" class="lab-desc"></p>
+</header>
+
+<main class="lab-main">
+
+  <a href="/target.html" target="_blank" class="launch-target-btn">🎯 Open Target Application (new tab) →</a>
+  <p class="footer-note" style="margin-top:8px">
+    This objective doesn't tell you exactly which page or field to use — go explore the target
+    application like you would a real assessment: browse the nav, check what a normal action actually
+    sends (Burp Suite / DevTools Network tab), try robots.txt, guess at things. Hints below if you get stuck.
+  </p>
+
+  <section class="panel">
+    <h2>Hints</h2>
+    <div id="hintsArea"></div>
+  </section>
+
+  <section class="panel" id="writeupPanel">
+    <h2>Solution &amp; Write-up <span class="muted">(spoilers)</span></h2>
+    <button class="hint-btn" id="btnShowWriteup">Show Full Solution</button>
+    <div id="writeupArea" style="display:none; margin-top:12px"></div>
+  </section>
+
+  <section class="panel flag-panel">
+    <h2>Capture the Flag</h2>
+    <form id="flagForm" class="flag-form-lg">
+      <input id="flagInput" type="text" placeholder="LAB{...}" autocomplete="off" />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="flagResult"></div>
+  </section>
+
+</main>
+
+<script src="/lab.js"></script>
+</body>
+</html>
